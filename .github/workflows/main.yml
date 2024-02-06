@@ -17,4 +17,4 @@ jobs:
           remove-old: false
       # Use the output from the `deploy` step
       - name: Get the output hash
-        run: echo "The hash was ${{ steps.deploy.outputs.hash }}"
+        run: echo "Thee hash was ${{ steps.deploy.outputs.hash }}"
