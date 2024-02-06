@@ -12,9 +12,8 @@ jobs:
         with:
           pin-name: 'TESTING (v1.6.3)'
           path: './.github/workflows/site2test'
-          pinata-api-key: ${{ secrets.27fcf4ec3599c8fbb429 }}
-          pinata-secret-api-key: ${{ secrets.5d0fe0311dd67c0b05a7ed1ebf141d69e7e942342d20285750ebb5a4a0a3d782 }}
-          verbose: true
+          pinata-api-key: ${{ secrets.IPFS_PINATA_DEPLOY_ACTION_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.IPFS_PINATA_DEPLOY_ACTION_API_SECRET_KEY }}
           remove-old: false
       # Use the output from the `deploy` step
       - name: Get the output hash
